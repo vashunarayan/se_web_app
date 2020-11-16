@@ -7,6 +7,20 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.typekit.net/txt6qtg.css">
         <style>
+        .top_pad
+        {
+          padding-top: 80px;
+        }
+          @media only screen and (min-width: 1080px) {
+            .nav_space {
+                margin-left: 55%;
+            }
+            .top_pad
+            {
+              padding-top: 120px;
+            }
+            }
+
         .font
         {
           font-family: raleway,sans-serif;
@@ -38,10 +52,8 @@
           min-width: 150px;
           position:absolute;                  
           bottom: 10px; 
-          display: flex; 
-          justify-content: center;
-          left: 25%; 
-          right: 25%;          
+          left: 10%; 
+          right: 10%;          
         }
         .card_height
         {
@@ -50,24 +62,24 @@
       </style>
     </head>
     <body>
-      <nav class="font_heading navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #011627;">
-        <a class="font navbar-brand col-sm-8" href="home.html">Diabetes Detection Web-App</a>
+      <nav class="font_heading navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #011627; padding-left: 5%;">
+        <a class="font navbar-brand href="home.html">Diabetes Detection Web-App</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav nav_space">
             <li class="nav-item active">
               <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about_diabetes.html">About Diabetes</a>
+              <a class="nav-link" style="white-space: nowrap;"" href="about_diabetes.html">About Diabetes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Working</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Test</a>
+              <a class="nav-link" href="test.html">Test</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="developers.html">Developers</a>
@@ -76,8 +88,8 @@
         </div>
       </nav>
 
-      <div style="padding-top: 120px; padding-left: 30px; padding-right: 30px; display: flex; vertical-align: middle;" class="row">
-        <div class="col-sm-3" style="padding-bottom: 20px;">
+      <div class="row top_pad" style="padding-left: 30px; padding-right: 30px; display: flex; vertical-align: middle;" >
+        <div class="col-lg-3" style="padding-bottom: 20px;">
           <div class="card">
             <a href="about_diabetes.html">
               <img style="border-radius: 15px;" src="about.png" class="card-img-top" alt="About diabetes">
@@ -89,7 +101,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3" style="padding-bottom: 20px;">
+        <div class="col-lg-3" style="padding-bottom: 20px;">
           <div class="card">
             <a href="#">
               <img style="border-radius: 15px;" src="working.png" class="card-img-top" alt="Working">
@@ -101,19 +113,19 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3" style="padding-bottom: 20px;">
+        <div class="col-lg-3" style="padding-bottom: 20px;">
           <div class="card">
-            <a href="#">
+            <a href="test.html">
               <img style="border-radius: 15px;" src="test.png" class="card-img-top" alt="Test">
             </a>
               <div class="card-body card_height">
               <h5 class="card-title">Test</h5>
               <p class="card-text">Proceed here to directly take the Test.</p>
-              <a href="#" class="button_padding font btn" style="background-color: white; border-width: 1px; border-radius: 50px; border-color: black;">Test</a>
+              <a href="test.html" class="button_padding font btn" style="background-color: white; border-width: 1px; border-radius: 50px; border-color: black;">Test</a>
             </div>
           </div>
         </div>
-        <div class="col-sm-3" style="padding-bottom: 20px;">
+        <div class="col-lg-3" style="padding-bottom: 20px;">
           <div class="card">
             <a href="developers.html">
               <img style="border-radius: 15px;" src="dev.png" class="card-img-top" alt="Developers">
