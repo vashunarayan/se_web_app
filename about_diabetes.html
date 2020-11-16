@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.typekit.net/txt6qtg.css">
         <style>
+            @media only screen and (min-width: 1080px) {
+            .nav_space {
+                margin-left: 55%;
+            }
+            }
         .font_heading
         {
           font-family: raleway,sans-serif;
@@ -39,8 +44,9 @@
           min-width: 150px;
         }
         .padding{
-            padding-right: 60px;
-            padding-left: 60px;
+            margin-left: 12%;
+            margin-right: 12%;
+
         }
         .font_body{
             font-weight: 450;
@@ -52,24 +58,24 @@
       </style>
     </head>
     <body>
-        <nav class="font_heading navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #011627;">
-            <a class="font navbar-brand col-sm-8" href="home.html">Diabetes Detection Web-App</a>
+        <nav class="font_heading navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #011627; padding-left: 5%;">
+            <a class="font navbar-brand href="home.html">Diabetes Detection Web-App</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav nav_space">
             <li class="nav-item">
               <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="about_diabetes.html">About Diabetes</a>
+                <a class="nav-link" style="white-space: nowrap;"" href="about_diabetes.html">About Diabetes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Working</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Test</a>
+              <a class="nav-link" href="test.html">Test</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="developers.html">Developers</a>
@@ -78,10 +84,9 @@
         </div>
       </nav>
 
-      <div class="row">
-          <div class="col-lg-12" style="padding-top: 120px; text-align: center;">
-              <h1 class="font_heading" style="color: #D72638;"><b>About Diabetes</b</h1>
-                <br>
+      <div class="row" style="">
+          <div class="col-lg-12" style="padding-top: 80px; text-align: center; ">
+              <h1 class="font_heading" style="color: white; background-color: #D72638 ; padding-top: 7px; padding-bottom: 7px; margin-right: 7%; margin-left: 7%;"><b>About Diabetes</b></h1>
                 <br>
           </div>
       </div>
@@ -149,7 +154,7 @@
             </div>
         </div>
 
-        <div class="padding col-lg-12 font_body" style="color: #D72638; text-align: center">
+        <div class="padding font_body" style="color: #D72638; text-align: center">
             <p>Source of all of the above content: <a style="color: blue;" href="https://www.who.int/news-room/fact-sheets/detail/diabetes" target="_blank">www.who.int</a> </p>
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
