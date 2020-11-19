@@ -183,8 +183,9 @@
           </div>
 
           <div class="form-group">
-            <label for="formControlRange">Choose BMI value using slider (0.0-67.1) </label>
+            <label for="formControlRange">Choose Body mass index (BMI) value using slider (0.0-67.1) </label>
             <small id="passwordHelpBlock" class="form-text text-muted">
+              Use this <a href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html" target="_blank">link</a> to calculate your BMI value.
                Value displayed beside slider, use arrow keys for precision.
               </small>
             <div class="container row ">
@@ -194,9 +195,30 @@
           </div>
 
           <div class="form-group">
-            <label for="formControlRange">Choose DPF value using slider (0.078-2.42) </label>
+            <label for="formControlRange">Choose Diabetes Pedigree Function (DPF) value using slider (0.078-2.42) </label>
             <small id="passwordHelpBlock" class="form-text text-muted">
-               Value displayed beside slider, use arrow keys for precision.
+              <!-- trigger modal -->
+              Use this <a href="" target="_blank" data-toggle="modal" data-target="#exampleModal">link</a> to calculate your DPF value. Value displayed beside slider, use arrow keys for precision.
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Diabetes Pedigree Function</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="dpf_def.png" alt="DPF definition" style="height: 80%; width: 80%">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 50px;">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               </small>
             <div class="container row ">
                 <input type="range" class="form-control-range sliders col-sm-10" min="0.078" max="2.42" step="0.01" id="formControlRange6" onchange="updateTextBox6(this.value);"> <br>
